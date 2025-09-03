@@ -48,10 +48,15 @@ button{font-size:15px;cursor:pointer;}
 </head>
 <body>
 
-<!-- Top iframe -->
+<!-- Embedded Tools -->
 
-<div style="width:100%;height:250px;background:#050812;border-radius:12px;overflow:hidden;margin-bottom:16px">
-  <iframe src="https://hitools.pro/find-id" style="width:100%;height:100%;border:0;" sandbox="allow-scripts allow-forms allow-same-origin"></iframe>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px">
+  <div style="height:250px;background:#050812;border-radius:12px;overflow:hidden">
+    <iframe src="https://hitools.pro/find-id" style="width:100%;height:100%;border:0;" sandbox="allow-scripts allow-forms allow-same-origin allow-popups allow-top-navigation"></iframe>
+  </div>
+  <div style="height:250px;background:#050812;border-radius:12px;overflow:hidden">
+    <iframe src="https://rifat405.github.io/editor/" style="width:100%;height:100%;border:0;" sandbox="allow-scripts allow-forms allow-same-origin allow-popups allow-top-navigation"></iframe>
+  </div>
 </div>
 
 <div class="wrap">
@@ -179,4 +184,4 @@ document.getElementById('copyTotpBtn').addEventListener('click',async()=>{
 </script>
 
 </body>
-    </html>
+</html>
